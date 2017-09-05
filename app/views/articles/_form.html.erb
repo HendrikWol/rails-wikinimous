@@ -1,0 +1,10 @@
+<div class="text-center" style="margin-top: 200px;">
+  <%= form_for(@article) do |f| %>
+    <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>

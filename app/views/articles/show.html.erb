@@ -1,0 +1,11 @@
+
+<div style="padding-left: 350px; padding-right: 350px; padding-top: 15px; padding-bottom: 40px; letter-spacing: 2px;">
+  <h1><%= @article.title %></h1>
+
+  <p><%= @article.content %></p>
+  <p class="btn btn-primary"><%= link_to 'delete', article_path(@article), method: :delete, data: {confirm: 'Are you sure?'} %></p>
+  <p class="btn btn-primary"><%= link_to 'update', edit_article_path(@article) %></p>
+
+
+  <div class="btn btn-primary"><%= link_to 'Home', articles_path %></div>
+</div>
